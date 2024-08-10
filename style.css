@@ -307,9 +307,20 @@ nav>ul>li {
 #img6{
     width: 40%;
 }
+.bmi-text{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.bmi-title{
+    font-size: 48px;
+    font-weight: 900;
 
-
-
+}
+.bmi-desc{
+    width: 80%;
+}
 
 
 
@@ -339,6 +350,19 @@ p{
     }
     .banner-text-img{
         width: 50%;
+    }
+    .habit-card-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+    }
+    .habit-card-desc{
+        text-align: center;
+        width: 250px;
+        gap: 10px;
+    }
+    .habit-card{
+        /* width: 50%; */
     }
 }
 
