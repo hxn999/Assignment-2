@@ -364,6 +364,24 @@ p{
     .habit-card{
         /* width: 50%; */
     }
+    .runmile-title{
+        font-size: 36px;
+    }
+    .runmile-desc{
+        width: 80%;
+    }
+    .runmile-img{
+        width: 40%;
+    }
+    #img1,#img2,#img3{
+        width: 33.3333333%;
+    }
+    #img4{
+        width: 40%;
+    }
+    #img5,#img6{
+        width: 30%;
+    }
 }
 
 @media (max-width:640px){
@@ -389,5 +407,57 @@ p{
         padding: 8px 10px;
         left: 102px;
         top: 65px;
+    }
+    .habit-card-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .habits-title{
+        font-size: 32px;
+        text-align: center;
+    }
+    .habits-desc{
+        width: 100%;
+    }
+    .runmile{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .runmile-img{
+        width: 100%;
+    }
+    .runmile-title{
+        width: 100%;
+    }
+    .runmile-desc{
+        width: 100%;
+    }
+    .runmile-btn{
+        width: 100%;
+    }
+    .training-title{
+        font-size: 32px;
+        width: 80%;
+    }
+    .training-desc{
+        width: 100%;
+    }
+    .bmi-title{
+        font-size: 32px;
+    }
+    .bmi-desc{
+        width: 100%;
+    }
+    #img3,#img6{
+        display: none;
+    }
+    #img1,#img2{
+        width: 50%;
+    }
+    #img4{
+        width: 45%;
+    }
+    #img5{
+        width: 55%;
     }
 }
