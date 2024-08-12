@@ -312,6 +312,7 @@ nav>ul>li {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    margin-bottom: 40px;
 }
 .bmi-title{
     font-size: 48px;
@@ -321,6 +322,187 @@ nav>ul>li {
 .bmi-desc{
     width: 80%;
 }
+.grey-background{
+    padding-bottom: 30px;
+    background-color: #222222;
+    color: white;
+}
+.bmicalc{
+    padding-top: 30px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    gap: 140px;
+
+}
+.bmi-chart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+.bmi-chart-title{
+    font-size: 28px;
+    font-weight: 900;
+}
+.bmi-table{
+    display: grid;
+    grid-template-columns: repeat(2,160px);
+}
+.bmi-data{
+    border: 2px solid rgb(55, 55, 55);
+    padding: 10px;
+}
+
+
+
+.bmi-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.bmi-form-title{
+    font-size: 28px;
+    font-weight: 900;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.form-grid{
+    display: grid;
+    grid-template-columns: 285px 285px;
+    gap: 10px;
+}
+#grid-select{
+    width: 285px;
+}
+#out-grid-select{
+    width: 577px;
+}
+input[type="text"],#grid-select,#out-grid-select{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.103);
+    border: none;
+    color: grey;
+    appearance: none;
+}
+
+.relate-pos{
+    position: relative;
+    width: max-content;
+}
+.absolute-pos{
+    position: absolute;
+    top: 7px;
+    right: 18px;
+    rotate: 90deg;
+}
+.bmi-btn{
+    padding: 10px 0;
+    width: 150px;
+}
+.meet-title{
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+}
+.meet-desc{
+    text-align: center;
+}
+
+.meet-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: rgba(255, 255, 255, 0.095);
+    margin-top: 60px;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 18px;
+
+}
+.meet-pic{
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    object-fit: cover;
+}
+.pic-container{
+    position: relative;
+}
+.pic-text{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+footer{
+    max-width: 1100px;
+    padding: 0 30px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 70px;
+    justify-content: center;
+    
+}
+.fitness-text{
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.b2{
+    padding-bottom: 30px;
+}
+.fitness-desc{
+    font-size: 14px;
+    width: 400px;
+    line-height: 20px;
+}
+.fitness-title{
+    display: inline;
+    font-size: 70px;
+}
+.fitness-list{
+    list-style-type: none;
+    color: grey;
+    line-height: 30px;
+}
+.getstart{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.get-start-title{
+    font-size: 32px;
+}
+.foot-up{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+hr{
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 1px solid #575757;
+    margin: 1em 0;
+    padding: 0;
+
+}
+.copyright{
+    font-size: 20px;
+    font-weight: 400;
+    color: grey;
+    text-align: center;
+}
+
+
+
+
 
 
 
@@ -381,6 +563,29 @@ p{
     }
     #img5,#img6{
         width: 30%;
+    }
+    .bmicalc{
+        flex-direction: column;
+    }
+    form{
+        width: 100%;
+    }
+    .form-grid{
+        display: grid;
+        grid-template-columns: 49% 49%;
+        gap: 10px;
+    }
+    #grid-select{
+        width: 100%;
+    }
+    .pos1{
+        width: 100%;
+    }
+    #out-grid-select{
+        width: 100%;
+    }
+    .relate-pos{
+        width: auto;
     }
 }
 
@@ -459,5 +664,17 @@ p{
     }
     #img5{
         width: 55%;
+    }
+    .meet-grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .meet-title{
+        font-size: 32px;
+    }
+    .foot-up{
+        flex-direction: column;
+    }
+    .fitness-desc{
+        width: 350px;
     }
 }
