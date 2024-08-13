@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
-
+@import url('https://fonts.cdnfonts.com/css/miama');
 
 
 * {
     margin: 0;
     padding: 0;
+}
+.bars{
+    display: none;
+}
+#miami{
+    font-family: 'Miama', sans-serif;
+    font-size: 100px;
+    font-weight: 500;
 }
 
 body {
@@ -131,12 +139,13 @@ nav>ul>li {
     border: 2px grey solid;
     border-radius: 20px;
     background-color: white;
-    width: 210px;
+    width: max-content;
     height: 85px;
     display: flex;
+
     justify-content: center;
     align-items: center;
-    /* padding: 0 25px; */
+    padding: 0 25px;
     
     background: rgba(255, 255, 255, 0.001);
     border-radius: 16px;
@@ -148,6 +157,9 @@ nav>ul>li {
     
 }
 .red-circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #E6533C;
     width: 40px;
     height: 40px;
@@ -155,6 +167,7 @@ nav>ul>li {
 }
 #gob-desc{
     color: grey;
+    font-size: 13px;
 }
 #gob-title{
     font-size: 24px;
@@ -162,14 +175,14 @@ nav>ul>li {
     color: white;
 }
 #gob-title2{
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 900;
     color: white;
 }
 .gob-container{
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    /* gap: 5px; */
 }
 .o1{
     bottom: 92px;
@@ -183,12 +196,12 @@ nav>ul>li {
 .o2{
     top: 120px;
     display: flex;
-    padding: 5px 0;
+    padding: 0 25px;
     flex-direction: column  ;
     justify-self: center;
     align-items: center;
     gap: 10px;
-    left: 230px;
+    left: 193px;
     
 }
 
@@ -238,7 +251,7 @@ nav>ul>li {
     background-color: rgba(34, 34, 34, 1);
     border-radius: 18px;
     display: flex;
-    padding: 30px;
+    padding: 30px 30px;
     padding-left: 45px;
 
 }
@@ -258,9 +271,18 @@ nav>ul>li {
     width: 70%;
     line-height: 30px;
 }
-.runmile-img{
-    width: 45%;
+.runmile-pic-container{
+    width: 60%;
     border-radius: 18px;
+    overflow: hidden;
+}
+.runmile-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(2.5) translateX(-50px) translateY(30px) ;
+    border-radius: 18px;
+    object-fit: cover;
 }
 
 .training{
@@ -289,23 +311,83 @@ nav>ul>li {
     height: 205px;
     width: 100%;
 }
+.pic-container img{
+    filter: brightness(80%);
+}
+
 #img1{
-    width: 20%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: sepia(100%) brightness(89%) hue-rotate(108deg) saturate(219%);
+-webkit-filter: sepia(100%) brightness(89%) hue-rotate(108deg) saturate(219%);
+-moz-filter: sepia(100%) brightness(89%) hue-rotate(108deg) saturate(219%);
 }
 #img2{
-    width: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: sepia(100%) brightness(83%) hue-rotate(317deg) saturate(355%);
+-webkit-filter: sepia(100%) brightness(83%) hue-rotate(317deg) saturate(355%);
+-moz-filter: sepia(100%) brightness(83%) hue-rotate(317deg) saturate(355%);
 }
 #img3{
-    width: 30%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(67%) saturate(159%);
+-webkit-filter: brightness(67%) saturate(159%);
+-moz-filter: brightness(67%) saturate(159%);
 }
 #img4{
-    width: 40%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(45%) saturate(159%);
+-webkit-filter: brightness(45%) saturate(159%);
+-moz-filter: brightness(45%) saturate(159%);
 }
 #img5{
-    width: 20%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: sepia(100%) brightness(94%) hue-rotate(47deg) saturate(199%);
+    -webkit-filter: sepia(100%) brightness(94%) hue-rotate(47deg) saturate(199%);
+    -moz-filter: sepia(100%) brightness(94%) hue-rotate(47deg) saturate(199%);
 }
 #img6{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: sepia(100%) brightness(64%) hue-rotate(156deg) saturate(168%) contrast(95%);
+-webkit-filter: sepia(100%) brightness(64%) hue-rotate(156deg) saturate(168%) contrast(95%);
+-moz-filter: sepia(100%) brightness(64%) hue-rotate(156deg) saturate(168%) contrast(95%);
+}
+
+
+.img1{
+    width: 20%;
+    position: relative;
+}
+.img2{
+    width: 50%;
+    position: relative;
+}
+.img3{
+    width: 30%;
+    position: relative;
+}
+.img4{
     width: 40%;
+    position: relative;
+}
+.img5{
+    width: 20%;
+    position: relative;
+}
+.img6{
+    width: 40%;
+position: relative;
 }
 .bmi-text{
     margin-top: 40px;
@@ -340,6 +422,7 @@ nav>ul>li {
     flex-direction: column;
     justify-content: center;
     gap: 50px;
+
 }
 .bmi-chart-title{
     font-size: 28px;
@@ -348,6 +431,8 @@ nav>ul>li {
 .bmi-table{
     display: grid;
     grid-template-columns: repeat(2,160px);
+    font-weight: 200;
+    color: grey;
 }
 .bmi-data{
     border: 2px solid rgb(55, 55, 55);
@@ -379,7 +464,7 @@ form{
     width: 285px;
 }
 #out-grid-select{
-    width: 577px;
+    width: 578px;
 }
 input[type="text"],#grid-select,#out-grid-select{
     padding: 10px;
@@ -449,7 +534,7 @@ footer{
     
 }
 .fitness-text{
-    width: max-content;
+    /* width: max-content; */
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -499,8 +584,24 @@ hr{
     color: grey;
     text-align: center;
 }
-
-
+h4{
+    position: absolute;
+    width: 60%;
+    font-size: 14px;
+    font-weight: 400;
+}
+.imgt1,.imgt3,.imgt5,.imgt6{
+    bottom: 20px;
+    left: 10px;
+}
+.imgt2{
+    left: 10px;
+    top: 20px;
+}
+.imgt4{
+    top: 20px;
+    right: 10px;
+}
 
 
 
@@ -510,8 +611,13 @@ p{
     color: grey;
 }
 /* media queries  */
+@media (max-width:1150px){
+    .o2{
+        left: 155px;
+    }
+}
 
-@media (max-width:1000px){
+@media (max-width:1050px){
     .banner{
         flex-direction: column;
         margin-top: 40px;
@@ -553,15 +659,16 @@ p{
         width: 80%;
     }
     .runmile-img{
-        width: 40%;
+        /* width: 40%; */
+        object-fit: cover;
     }
-    #img1,#img2,#img3{
+    .img1,.img2,.img3{
         width: 33.3333333%;
     }
-    #img4{
+    .img4{
         width: 40%;
     }
-    #img5,#img6{
+    .img5,.img6{
         width: 30%;
     }
     .bmicalc{
@@ -582,10 +689,23 @@ p{
         width: 100%;
     }
     #out-grid-select{
-        width: 100%;
+        width: 99%;
     }
     .relate-pos{
         width: auto;
+    }
+    .o2{
+        top: 210px;
+    }
+    .runmile-pic-container{
+        width: 100%;
+        border-radius: 18px;
+        overflow: hidden;
+    }
+    .runmile-img{
+
+        transform: scale(2) translateX(-40px) translateY(30px) ;
+
     }
 }
 
@@ -594,24 +714,39 @@ p{
         display: none;
     }
     .glass-object {
-        width: 170px;
-        height: 70px;
+        width: 130px;
+        height: 50px;
+    }
+    #gob-desc{
+        font-size: 8px;
+    }
+    .o1{
+        padding: 0 10px;
+        left: -69px;
     }
     .banner-text-title{
         font-size: 36px;
+    }
+    .red-circle{
+        width: 28px;
+        height: 28px;
     }
     .banner-text-desc{
         width: 70%;
     }
     #gob-title2{
-        font-size: 35px;
+        font-size: 28px;
         font-weight: 900;
         color: white;
     }
     .o2{
-        padding: 8px 10px;
+        padding: 5px 20px;
+        height: max-content;
         left: 102px;
-        top: 65px;
+        top: 115px;
+        gap: 2px;
+        align-items: flex-start;
+        width: max-content;
     }
     .habit-card-container{
         display: flex;
@@ -625,9 +760,11 @@ p{
         width: 100%;
     }
     .runmile{
+        display: flex;
         flex-direction: column;
         gap: 30px;
     }
+
     .runmile-img{
         width: 100%;
     }
@@ -653,16 +790,16 @@ p{
     .bmi-desc{
         width: 100%;
     }
-    #img3,#img6{
+    .img3,.img6{
         display: none;
     }
-    #img1,#img2{
+    .img1,.img2{
         width: 50%;
     }
-    #img4{
+    .img4{
         width: 45%;
     }
-    #img5{
+    .img5{
         width: 55%;
     }
     .meet-grid{
@@ -675,6 +812,22 @@ p{
         flex-direction: column;
     }
     .fitness-desc{
-        width: 350px;
+        width: 100%;
+ 
+    }
+    .bars{
+        display: block;
+    }
+    .fitness-text{
+        width: 100%;
+    }
+    .banner-text-btn{
+        font-size: 14px;
+    }
+}
+@media (max-width:370px) {
+    .bmi-table{
+        display: grid;
+        grid-template-columns: repeat(2,130px);
     }
 }

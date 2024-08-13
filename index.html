@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/94bdd9d72a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Gym</title>
 </head>
@@ -20,6 +21,7 @@
                     <li>Contact</li>
                     <li>About</li>
                 </ul>
+                <i class="fa-solid fa-bars fa-xl bars" style="color: white;"></i>
             </nav>
         </header>
         <section class="banner">
@@ -39,7 +41,7 @@
                 <div class="banner-text-img">
                     <img src="images/Images 2.png" alt="" class="banner-img">
                     <div class="glass-object o1">
-                        <div class="red-circle"></div>
+                        <div class="red-circle"><i class="fa-solid fa-caret-up fa-xl fa-rotate-90" style="color: #ffffff;"></i></div>
                         <div class="gob-container">
                             <h5 id="gob-title">350+</h5>
                             <span id="gob-desc">
@@ -49,8 +51,7 @@
                         </div>
                     </div>
                     <div class="glass-object o2">
-                        <div class="gov-container">
-
+                        <div class="gob-container">
                             <h5 id="gob-title2">500+</h5>
                             <span id="gob-desc">
                                 Free Workout Videos
@@ -106,7 +107,11 @@
                     <div class="runmile-btn-container"><button class="banner-text-btn runmile-btn">Join Now</button>
                     </div>
                 </div>
-                <img src="images/run.jpg" alt="" class="runmile-img">
+                <div class="runmile-pic-container">
+
+                    <img src="images/run.jpg" alt="" class="runmile-img">
+                </div>
+                
             </div>
             <div class="training">
                 <h1 class="training-title">Training and Exercises</h1>
@@ -114,10 +119,34 @@
                     everywhere, regardless of income or access to a gym.
                 </p>
                 <div class="pic-grid">
-                    <div class="grid1"><img src="images/exercise1.jpg" id="img1" alt=""><img src="images/exercise2.png"
-                            id="img2" alt=""><img src="images/exercise3.png" id="img3" alt=""></div>
-                    <div class="grid2"><img src="images/exercise4.png" id="img4" alt=""><img src="images/exercise5.jpg"
-                            id="img5" alt=""><img src="images/exercise6.jpg" id="img6" alt=""></div>
+                    <div class="grid1">
+                        <div class="img1">
+                            <img src="images/exercise1.jpg" id="img1" alt="" >
+                            <h4 class="imgt1">Box Jumps</h4>
+                        </div>
+                        <div class="img2">
+                            <img src="images/exercise2.png" id="img2" alt="">
+                            <h4 class="imgt2">Bulgarian Split Squats</h4>
+                        </div>
+                        <div class="img3">
+                            <img src="images/exercise3.png" id="img3" alt="">
+                            <h4 class="imgt3">Squats</h4>
+                        </div>
+                    </div>
+                    <div class="grid2">
+                        <div class="img4">
+                            <img src="images/exercise4.png" id="img4" alt="">
+                            <h4 class="imgt4">Glute Bridges</h4>
+                        </div>
+                        <div class="img5">
+                            <img src="images/exercise5.jpg" id="img5" alt="">
+                            <h4 class="imgt5">Leg press</h4>
+                        </div>
+                        <div class="img6">
+                            <img src="images/exercise6.jpg" id="img6" alt="">
+                            <h4 class="imgt6">Romanian Deadlift</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="bmi-text">
@@ -133,16 +162,16 @@
             <div class="bmi-chart">
                 <h1 class="bmi-chart-title ">BMI Calculator Chart</h1>
                 <div class="bmi-table">
-                    <div class="bmi-data">BMI</div>
-                    <div class="bmi-data">BMI</div>
-                    <div class="bmi-data">BMI</div>
-                    <div class="bmi-data">BMI</div>
-                    <div class="bmi-data">BMI</div>
-                    <div class="bmi-data">BMI</div>
-                    <div class="bmi-data">BMI</div>
-                    <div class="bmi-data">BMI</div>
-                    <div class="bmi-data">BMI</div>
-                    <div class="bmi-data">BMI</div>
+                    <div class="bmi-data" style="color: white;">BMI</div>
+                    <div class="bmi-data" style="color: white;">BMI</div>
+                    <div class="bmi-data">Below 18.5</div>
+                    <div class="bmi-data">Underweight</div>
+                    <div class="bmi-data">18.45-24.9</div>
+                    <div class="bmi-data">Healthy</div>
+                    <div class="bmi-data">25.0-29.9</div>
+                    <div class="bmi-data">Overweight</div>
+                    <div class="bmi-data">30.0-and Above</div>
+                    <div class="bmi-data">Obese</div>
                 </div>
             </div>
             <div class="bmi-form">
@@ -155,7 +184,7 @@
                         <input type="text" name="" placeholder="Weight/kg" id="">
                         <input type="text" name="" placeholder="Age" id="">
                         <div class="relate-pos">
-                            <span class="absolute-pos" >></span> 
+                            <span class="absolute-pos">></span>
                             <select aria-placeholder="Sex" name="" id="grid-select">
                                 <option value="Sex">Sex</option>
                                 <option value="Male">Male</option>
@@ -184,11 +213,12 @@
                 Meet Our Team
             </h1>
             <p class="meet-desc">
-                We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.
+                We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a
+                gym.
             </p>
             <div class="meet-grid">
                 <div class="pic-container">
-                    <img src="/images/trainer1.png" alt="" class="meet-pic">
+                    <img src="/images/trainer1.png" alt="" class="meet-pic" >
                     <div class="pic-text">
                         <h4 class="pic-text-title">Jerome Bell</h4>
                         <p class="pic-text-desc">Trainer</p>
@@ -240,7 +270,8 @@
                 <div class="fitness-text">
                     <h1 class="nav-title fitness-title ">Fitness</h1>
                     <p class="fitness-desc">
-                        We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.
+                        We believe fitness should be accessible to everyone, everywhere, regardless of income or access
+                        to a gym. With hundreds of professional workouts.
                     </p>
                 </div>
                 <div class="getstart">
@@ -262,8 +293,8 @@
                     </ul>
                 </div>
             </div>
-                <hr>
-                <h1 class="copyright">All right reserved @Fitness 2024</h1>
+            <hr>
+            <h1 class="copyright">All right reserved @Fitness 2024</h1>
         </footer>
     </div>
 </body>
